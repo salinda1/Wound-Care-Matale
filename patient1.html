@@ -3,28 +3,192 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Wound Care Matale</title>
+  <title>Patient 1 - Wound Care Matale</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    header {
+      position: relative;
+      height: 300px;
+      color: white;
+      background-image: url('https://woundcarem.github.io/Wound-Care-Matale/ChatGPT%20Image%20Nov%201,%202025,%2011_25_53%20AM.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    header h1, header p {
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 { padding-top: 100px; margin: 0; font-size: 36px; }
+    p { font-size: 18px; margin-top: 5px; }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 30px;
+    }
+
+    .gallery img {
+      width: 150px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Popup (Lightbox) Styles */
+    .popup {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.85);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .popup img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 15px 0;
+      margin-top: 30px;
+    }
+
+    a.back {
+      display: inline-block;
+      margin: 20px;
+      padding: 10px 20px;
+      background: #007acc;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    /* Close button */
+    .close {
+      position: fixed;
+      top: 20px;
+      right: 30px;
+      color: white;
+      font-size: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
 </head>
-<body style="font-family: 'Times New Roman', Times, serif; margin: 0; padding: 0; background-color: #f9f9f9;">
-<header style="position: relative; height: 300px; color: white; text-align: center;
-  background-image: url('https://woundcarem.github.io/Wound-Care-Matale/ChatGPT%20Image%20Nov%201,%202025,%2011_25_53%20AM.png');
-  background-size: cover; background-position: center; background-repeat: no-repeat;">
-  <div style="background: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
-  <div style="position: relative; z-index: 1; padding-top: 100px;">
-    <h1 style="margin: 0; font-size: 36px;">WOUND CARE MATALE</h1>
-    <p style="font-size: 18px;">Professional Wound Care Services</p>
+<body>
+  <header>
+    <h1>Patient 1 - Wound Progress</h1>
+    <p>Wound Care Matale</p>
+  </header>
+
+  <a class="back" href="index.html">⬅ Back to Home</a>
+
+  <div class="gallery">
+    <img src="wound/Dev dad/20240124_130023.jpg" alt="">
+    <img src="wound/Dev dad/20240124_130026.jpg" alt="">
+    <img src="wound/Dev dad/20240124_130029.jpg" alt="">
+    <img src="wound/Dev dad/20240124_130055.jpg" alt="">
+    <img src="wound/Dev dad/20240124_130059.jpg" alt="">
+    <img src="wound/Dev dad/20240124_130105.jpg" alt="">
+    <img src="wound/Dev dad/20240124_130108.jpg" alt="">
+    <img src="wound/Dev dad/20240126_164214.jpg" alt="">
+    <img src="wound/Dev dad/20240126_164218.jpg" alt="">
+    <img src="wound/Dev dad/20240126_164224.jpg" alt="">
+    <img src="wound/Dev dad/20240126_164227.jpg" alt="">
+    <img src="wound/Dev dad/20240126_164230.jpg" alt="">
+    <img src="wound/Dev dad/20240126_164243.jpg" alt="">
+    <img src="wound/Dev dad/20240128_192857.jpg" alt="">
+    <img src="wound/Dev dad/20240128_192900.jpg" alt="">
+    <img src="wound/Dev dad/20240128_192910.jpg" alt="">
+    <img src="wound/Dev dad/20240128_192913.jpg" alt="">
+    <img src="wound/Dev dad/20240206_155530.jpg" alt="">
+    <img src="wound/Dev dad/20240206_155533.jpg" alt="">
+    <img src="wound/Dev dad/20240206_155538.jpg" alt="">
+    <img src="wound/Dev dad/20240206_155542.jpg" alt="">
+    <img src="wound/Dev dad/20240206_155547.jpg" alt="">
+    <img src="wound/Dev dad/20240206_155552.jpg" alt="">
+    <img src="wound/Dev dad/20240206_155601.jpg" alt="">
+    <img src="wound/Dev dad/20240206_155605.jpg" alt="">
+    <img src="wound/Dev dad/20240208_140517.jpg" alt="">
+    <img src="wound/Dev dad/20240208_140519.jpg" alt="">
+    <img src="wound/Dev dad/20240208_140526.jpg" alt="">
+    <img src="wound/Dev dad/20240208_140549.jpg" alt="">
+    <img src="wound/Dev dad/20240208_140554.jpg" alt="">
+    <img src="wound/Dev dad/20240208_140558.jpg" alt="">
+    <img src="wound/Dev dad/20240208_140600.jpg" alt="">
+    <img src="wound/Dev dad/20240219_171503.jpg" alt="">
+    <img src="wound/Dev dad/20240219_171801.jpg" alt="">
+    <img src="wound/Dev dad/20240219_172441.jpg" alt="">
+    <img src="wound/Dev dad/20240219_172448.jpg" alt="">
+    <img src="wound/Dev dad/20240219_172455.jpg" alt="">
+    <img src="wound/Dev dad/20240219_172501.jpg" alt="">
+    <img src="wound/Dev dad/20240219_172505.jpg" alt="">
+    <img src="wound/Dev dad/20240221_185634.jpg" alt="">
+    <img src="wound/Dev dad/20240221_185641.jpg" alt="">
+    <img src="wound/Dev dad/20240221_185652.jpg" alt="">
+    <img src="wound/Dev dad/20240221_185707.jpg" alt="">
   </div>
-</header>
-<main style='text-align:center; padding:40px;'>
-<h2>Patient1</h2>
-<a href='wound/Dev dad/20240124_130023.jpg' target='_blank'><img src='wound/Dev dad/20240124_130023.jpg' alt='patient1' style='width:150px; margin:10px; border-radius:8px;'></a>
-</main>
-<footer style="background-color: #222; color: white; text-align: center; padding: 15px 0;">
-  <p>© <span id="year"></span> WCM</p>
-</footer>
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+
+  <div class="popup" id="popup">
+    <a href="#" class="close">&times;</a>
+    <img id="popupImg" src="" alt="">
+  </div>
+
+  <footer>
+    <p>© <span id="year"></span> WCM</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Popup functionality
+    const galleryImages = document.querySelectorAll('.gallery img');
+    const popup = document.getElementById('popup');
+    const popupImg = document.getElementById('popupImg');
+
+    galleryImages.forEach(img => {
+      img.addEventListener('click', () => {
+        popupImg.src = img.src;
+        popup.style.display = 'flex';
+      });
+    });
+
+    popup.addEventListener('click', (e) => {
+      if (e.target === popup || e.target.classList.contains('close')) {
+        popup.style.display = 'none';
+      }
+    });
+  </script>
 </body>
 </html>
