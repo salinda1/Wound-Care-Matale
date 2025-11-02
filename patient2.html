@@ -9,7 +9,6 @@
     body {
       font-family: 'Times New Roman', Times, serif;
       margin: 0;
-      padding: 0;
       background-color: #f9f9f9;
       text-align: center;
     }
@@ -18,55 +17,66 @@
       position: relative;
       height: 300px;
       color: white;
-      text-align: center;
       background-image: url('https://woundcarem.github.io/Wound-Care-Matale/ChatGPT%20Image%20Nov%201,%202025,%2011_25_53%20AM.png');
       background-size: cover;
       background-position: center;
-      background-repeat: no-repeat;
     }
 
     header::before {
       content: "";
-      background: rgba(0, 0, 0, 0.5);
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
     }
 
-    header div {
+    header h1, header p {
       position: relative;
       z-index: 1;
-      padding-top: 100px;
+      margin: 0;
     }
 
-    h1 { margin: 0; font-size: 36px; }
+    h1 { padding-top: 100px; font-size: 36px; }
     p { font-size: 18px; margin-top: 5px; }
+
+    a.back {
+      display: inline-block;
+      margin: 20px;
+      padding: 10px 20px;
+      background: #007acc;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 30px;
+    }
 
     .gallery img {
       width: 150px;
-      margin: 10px;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: transform 0.3s ease;
+      height: auto;
+      border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.2s;
+      cursor: pointer;
+      loading: lazy;
     }
 
     .gallery img:hover {
-      transform: scale(1.05);
+      transform: scale(1.1);
     }
 
-    /* Popup overlay */
     .popup {
       display: none;
       position: fixed;
-      z-index: 100;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.85);
+      z-index: 999;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.85);
       justify-content: center;
       align-items: center;
     }
@@ -75,86 +85,79 @@
       max-width: 90%;
       max-height: 90%;
       border-radius: 10px;
-      box-shadow: 0 0 15px rgba(255,255,255,0.3);
+      box-shadow: 0 0 20px rgba(255,255,255,0.2);
     }
 
     .close {
-      position: absolute;
-      top: 30px;
-      right: 50px;
+      position: fixed;
+      top: 20px;
+      right: 30px;
       color: white;
-      font-size: 40px;
+      font-size: 30px;
       font-weight: bold;
+      text-decoration: none;
       cursor: pointer;
     }
 
     footer {
       background-color: #222;
       color: white;
-      text-align: center;
       padding: 15px 0;
       margin-top: 30px;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Patient 2 - Wound Progress</h1>
+    <p>Wound Care Matale</p>
+  </header>
 
-<header>
-  <div>
-    <h1>WOUND CARE MATALE</h1>
-    <p>Professional Wound Care Services</p>
-  </div>
-</header>
-
-<main style='padding:40px;'>
-  <h2>Patient 2</h2>
+  <a class="back" href="index.html">⬅ Back to Home</a>
 
   <div class="gallery">
-    <img src="wound/Kasun%27s%20nangi/20231119_175439.jpg" alt="patient2" loading="lazy" onclick="openPopup(this)">
-    <img src="wound/Kasun%27s%20nangi/20231119_175444.jpg" alt="patient2" loading="lazy" onclick="openPopup(this)">
-    <img src="wound/Kasun%27s%20nangi/20231119_175451.jpg" alt="patient2" loading="lazy" onclick="openPopup(this)">
-    <img src="wound/Kasun%27s%20nangi/20231123_195437.jpg" alt="patient2" loading="lazy" onclick="openPopup(this)">
-    <img src="wound/Kasun%27s%20nangi/20231123_195442.jpg" alt="patient2" loading="lazy" onclick="openPopup(this)">
-    <img src="wound/Kasun%27s%20nangi/20231125_153722.jpg" alt="patient2" loading="lazy" onclick="openPopup(this)">
-    <img src="wound/Kasun%27s%20nangi/20231125_153731.jpg" alt="patient2" loading="lazy" onclick="openPopup(this)">
-    <img src="wound/Kasun%27s%20nangi/20231128_201550.jpg" alt="patient2" loading="lazy" onclick="openPopup(this)">
-    <img src="wound/Kasun%27s%20nangi/20231128_201559.jpg" alt="patient2" loading="lazy" onclick="openPopup(this)">
-    <img src="wound/Kasun%27s%20nangi/20231128_201612.jpg" alt="patient2" loading="lazy" onclick="openPopup(this)">
-    <img src="wound/Kasun%27s%20nangi/20231201_183619.jpg" alt="patient2" loading="lazy" onclick="openPopup(this)">
-    <img src="wound/Kasun%27s%20nangi/20231201_183646.jpg" alt="patient2" loading="lazy" onclick="openPopup(this)">
+    <img src="wound/Kasun%27s%20nangi/20231119_175439.jpg" alt="patient2" loading="lazy">
+    <img src="wound/Kasun%27s%20nangi/20231119_175444.jpg" alt="patient2" loading="lazy">
+    <img src="wound/Kasun%27s%20nangi/20231119_175451.jpg" alt="patient2" loading="lazy">
+    <img src="wound/Kasun%27s%20nangi/20231123_195437.jpg" alt="patient2" loading="lazy">
+    <img src="wound/Kasun%27s%20nangi/20231123_195442.jpg" alt="patient2" loading="lazy">
+    <img src="wound/Kasun%27s%20nangi/20231125_153722.jpg" alt="patient2" loading="lazy">
+    <img src="wound/Kasun%27s%20nangi/20231125_153731.jpg" alt="patient2" loading="lazy">
+    <img src="wound/Kasun%27s%20nangi/20231128_201550.jpg" alt="patient2" loading="lazy">
+    <img src="wound/Kasun%27s%20nangi/20231128_201559.jpg" alt="patient2" loading="lazy">
+    <img src="wound/Kasun%27s%20nangi/20231128_201612.jpg" alt="patient2" loading="lazy">
+    <img src="wound/Kasun%27s%20nangi/20231201_183619.jpg" alt="patient2" loading="lazy">
+    <img src="wound/Kasun%27s%20nangi/20231201_183646.jpg" alt="patient2" loading="lazy">
   </div>
-</main>
 
-<!-- Popup overlay -->
-<div class="popup" id="popup">
-  <span class="close" id="close">&times;</span>
-  <img id="popup-img" src="">
-</div>
+  <div class="popup" id="popup">
+    <a href="#" class="close">&times;</a>
+    <img id="popupImg" src="" alt="">
+  </div>
 
-<footer>
-  <p>© <span id="year"></span> WCM</p>
-</footer>
+  <footer>
+    <p>© <span id="year"></span> WCM</p>
+  </footer>
 
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
 
-  const popup = document.getElementById("popup");
-  const popupImg = document.getElementById("popup-img");
-  const closeBtn = document.getElementById("close");
+    const galleryImages = document.querySelectorAll('.gallery img');
+    const popup = document.getElementById('popup');
+    const popupImg = document.getElementById('popupImg');
 
-  function openPopup(img) {
-    popup.style.display = "flex";
-    popupImg.src = img.src;
-  }
+    galleryImages.forEach(img => {
+      img.addEventListener('click', () => {
+        popupImg.src = img.src;
+        popup.style.display = 'flex';
+      });
+    });
 
-  closeBtn.addEventListener("click", () => {
-    popup.style.display = "none";
-  });
-
-  popup.addEventListener("click", (e) => {
-    if (e.target === popup) popup.style.display = "none";
-  });
-</script>
-
+    popup.addEventListener('click', (e) => {
+      if (e.target === popup || e.target.classList.contains('close')) {
+        popup.style.display = 'none';
+      }
+    });
+  </script>
 </body>
 </html>
