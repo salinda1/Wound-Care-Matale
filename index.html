@@ -5,21 +5,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Wound Care Matale</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    .collection img {
-      width: 150px;
-      border-radius: 10px;
-      display: block;
-      transition: filter 0.5s ease, opacity 0.5s ease;
-      filter: blur(10px);
-      opacity: 0.7;
-      cursor: pointer;
-    }
-    .collection img.loaded {
-      filter: blur(0);
-      opacity: 1;
-    }
-  </style>
 </head>
 <body style="font-family: 'Times New Roman', Times, serif; margin: 0; padding: 0; background-color: #f9f9f9;">
 
@@ -35,7 +20,7 @@
   </div>
 </header>
 
-<main style='text-align:center; padding:40px;'>
+<main style="text-align:center; padding:40px;">
 
   <!-- About Button -->
   <div style="margin-bottom: 30px;">
@@ -47,52 +32,59 @@
 
   <h2>Patient Collections</h2>
 
-  <div class='collection' style='display:inline-block; margin:20px;'>
-    <a href='wound/Dev dad/20240124_130023.jpg' target="_blank">
-      <img src='wound/Dev dad/20240124_130023-small.jpg' data-full='wound/Dev dad/20240124_130023.jpg' alt='Patient 1' class="lazy">
-      <p style='color:#333; font-weight:bold;'>Patient 1</p>
+  <!-- Patient 1 -->
+  <div class="collection" style="display:inline-block; margin:20px;">
+    <a href="patient1.html" style="text-decoration:none;">
+      <img src="wound/DevDad/20240124_130023.jpg" alt="Patient 1" style="width:150px; border-radius:10px;">
+      <p style="color:#333; font-weight:bold;">Patient 1</p>
     </a>
   </div>
 
-  <div class='collection' style='display:inline-block; margin:20px;'>
-    <a href='wound/Kasunnangi/20231119_175439.jpg' target="_blank">
-      <img src='wound/Kasunsnangi/20231119_175439-small.jpg' data-full='wound/Kasuns nangi/20231119_175439.jpg' alt='Patient 2' class="lazy">
-      <p style='color:#333; font-weight:bold;'>Patient 2</p>
+  <!-- Patient 2 -->
+  <div class="collection" style="display:inline-block; margin:20px;">
+    <a href="patient2.html" style="text-decoration:none;">
+      <img src="wound/Kasunsnangi/20231119_175439.jpg" alt="Patient 2" style="width:150px; border-radius:10px;">
+      <p style="color:#333; font-weight:bold;">Patient 2</p>
     </a>
   </div>
 
-  <div class='collection' style='display:inline-block; margin:20px;'>
-    <a href='wound/Kithsiri ayya/20240219_205748.jpg' target="_blank">
-      <img src='wound/Kithsiri ayya/20240219_205748-small.jpg' data-full='wound/Kithsiri ayya/20240219_205748.jpg' alt='Patient 3' class="lazy">
-      <p style='color:#333; font-weight:bold;'>Patient 3</p>
+  <!-- Patient 3 -->
+  <div class="collection" style="display:inline-block; margin:20px;">
+    <a href="patient3.html" style="text-decoration:none;">
+      <img src="wound/KithsiriAyya/20240219_205748.jpg" alt="Patient 3" style="width:150px; border-radius:10px;">
+      <p style="color:#333; font-weight:bold;">Patient 3</p>
     </a>
   </div>
 
-  <div class='collection' style='display:inline-block; margin:20px;'>
-    <a href='wound/Kiwla/20231123_110625.jpg' target="_blank">
-      <img src='wound/Kiwla/20231123_110625-small.jpg' data-full='wound/Kiwla/20231123_110625.jpg' alt='Patient 4' class="lazy">
-      <p style='color:#333; font-weight:bold;'>Patient 4</p>
+  <!-- Patient 4 -->
+  <div class="collection" style="display:inline-block; margin:20px;">
+    <a href="patient4.html" style="text-decoration:none;">
+      <img src="wound/Kiwla/20231123_110625.jpg" alt="Patient 4" style="width:150px; border-radius:10px;">
+      <p style="color:#333; font-weight:bold;">Patient 4</p>
     </a>
   </div>
 
-  <div class='collection' style='display:inline-block; margin:20px;'>
-    <a href='wound/Kumbaloluwa/20230904_210336.jpg' target="_blank">
-      <img src='wound/Kumbaloluwa/20230904_210336-small.jpg' data-full='wound/Kumbaloluwa/20230904_210336.jpg' alt='Patient 5' class="lazy">
-      <p style='color:#333; font-weight:bold;'>Patient 5</p>
+  <!-- Patient 5 -->
+  <div class="collection" style="display:inline-block; margin:20px;">
+    <a href="patient5.html" style="text-decoration:none;">
+      <img src="wound/Kumbaloluwa/20230904_210336.jpg" alt="Patient 5" style="width:150px; border-radius:10px;">
+      <p style="color:#333; font-weight:bold;">Patient 5</p>
     </a>
   </div>
 
-  <div class='collection' style='display:inline-block; margin:20px;'>
-    <a href='wound/Mandandawela pt/20240213_201918.jpg' target="_blank">
-      <img src='wound/Mandandawela pt/20240213_201918-small.jpg' data-full='wound/Mandandawela pt/20240213_201918.jpg' alt='Patient 6' class="lazy">
-      <p style='color:#333; font-weight:bold;'>Patient 6</p>
+  <!-- Patient 6 -->
+  <div class="collection" style="display:inline-block; margin:20px;">
+    <a href="patient6.html" style="text-decoration:none;">
+      <img src="wound/MandandawelaPt/20240213_201918.jpg" alt="Patient 6" style="width:150px; border-radius:10px;">
+      <p style="color:#333; font-weight:bold;">Patient 6</p>
     </a>
   </div>
 
-  <div class='collection' style='display:inline-block; margin:20px;'>
-    <a href='wound/Manju mahattaya/20231106_183910.jpg' target="_blank">
-      <img src='wound/Manju mahattaya/20231106_183910-small.jpg' data-full='wound/Manju mahattaya/20231106_183910.jpg' alt='Patient 7' class="lazy">
-      <p style='color:#333; font-weight:bold;'>Patient 7</p>
+  <!-- Patient 7 -->
+  <div class="collection" style="display:inline-block; margin:20px;">
+    <a href="patient7.html" style="text-decoration:none;">
+      <img src="wound/ManjuMahattaya/20231106_183910.jpg" alt="Patient 7" style="width:150px; border-radius:10px;">
+      <p style="color:#333; font-weight:bold;">Patient 7</p>
     </a>
   </div>
 
@@ -103,18 +95,8 @@
 </footer>
 
 <script>
+  // Set current year
   document.getElementById("year").textContent = new Date().getFullYear();
-
-  // Lazy load full-resolution images
-  document.querySelectorAll('.lazy').forEach(img => {
-    const fullSrc = img.dataset.full;
-    const fullImage = new Image();
-    fullImage.src = fullSrc;
-    fullImage.onload = () => {
-      img.src = fullSrc;
-      img.classList.add('loaded');
-    };
-  });
 </script>
 
 </body>
